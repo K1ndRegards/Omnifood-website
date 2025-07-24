@@ -1,0 +1,236 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  /* Hero */
+  .hero .hero-container {
+    gap: 4.8rem;
+  }
+
+  /* Testimonials & Gallery */
+  .testimonials .gallery-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+  /* Header mobile navigation */
+  /* Header navigation */
+  .main-header .header-nav {
+    display: none;
+  }
+
+  /* Mobile menu */
+  .main-header .header-mobile-nav {
+    display: block;
+  }
+  /* Button */
+  .main-header .mobile-nav-open {
+    display: block;
+  }
+
+  /* Hero section */
+  .hero .hero-container {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+    padding: 13rem 8rem 10rem;
+    text-align: center;
+  }
+
+  .hero .hero-buttons {
+    justify-content: center;
+    margin-bottom: 2.56rem;
+  }
+
+  .hero .hero-delivered {
+    justify-content: center;
+  }
+
+  .hero .hero-image img {
+    width: 60%;
+  }
+
+  /* Testimonials & Gallery */
+  .testimonials .testimonials-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials .testimonial-block {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .testimonials .gallery-block {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  /* Call to action */
+  .cta .cta-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  /* Hero */
+  .hero .hero-container {
+    padding: 13rem 3.2rem 10rem;
+  }
+
+  .hero .hero-delivered {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  /* Featured */
+  .featured .featured-images {
+    gap: 3rem;
+  }
+
+  /* Meals */
+  .meals .meals-box {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 5rem;
+  }
+
+  .meals .meals-box .diets {
+    grid-column: 1 / -1;
+  }
+
+  /* Pricing */
+  .pricing .pricing-plans {
+    column-gap: 4.8rem;
+  }
+
+  .pricing .pricing-plan {
+    width: 100%;
+  }
+
+  /* Pricing - Features */
+
+  .pricing .pricing-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Website footer */
+  .main-footer .footer-container {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .main-footer .footer-column {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .main-footer .logo-col,
+  .main-footer .contact-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Overview */
+  .overview .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Controllin the order */
+  .overview .overview-grid .grid-item:nth-child(1) {
+    order: 2;
+  }
+  .overview .overview-grid .grid-item:nth-child(2) {
+    order: 1;
+  }
+  .overview .overview-grid .grid-item:nth-child(3) {
+    order: 4;
+  }
+  .overview .overview-grid .grid-item:nth-child(4) {
+    order: 3;
+  }
+  .overview .overview-grid .grid-item:nth-child(5) {
+    order: 6;
+  }
+  .overview .overview-grid .grid-item:nth-child(6) {
+    order: 5;
+  }
+
+  /* Featured */
+  .featured .featured-images {
+    gap: 1rem;
+  }
+
+  /* Meals */
+  .meals .meals-box {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonials & Gallery */
+
+  .testimonials .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials .gallery-block {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Pricing */
+  .pricing .pricing-plans {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .pricing .pricing-plan {
+    width: 100%;
+  }
+
+  /* Pricing - Features */
+
+  .pricing .pricing-features {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing .pricing-feature {
+    text-align: center;
+  }
+
+  .pricing .pricing-feature .icon {
+    margin: 0 auto 3.2rem;
+  }
+
+  /* Call to action section */
+  .cta .cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta .cta-content {
+    padding: 3.2rem;
+  }
+
+  .cta .cta-image {
+    height: 32rem;
+    grid-row: 1;
+  }
+}
