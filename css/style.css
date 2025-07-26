@@ -104,6 +104,8 @@ body {
   font-family: 'Rubik', sans-serif;
   line-height: 1;
   color: var(--font-color);
+
+  scroll-behavior: smooth;
 }
 
 /* Component styles */
