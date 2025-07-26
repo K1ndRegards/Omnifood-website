@@ -26,9 +26,11 @@
   background-color: var(--background-primary-color);
 }
 
-.btn {
+.btn,
+.btn:link,
+.btn:focus {
   display: inline-block;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   border-radius: 1rem;
   padding: 1.6rem 3.2rem;
   font-size: 2rem;
@@ -97,6 +99,11 @@
   font-size: 6rem;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
 /* General styles */
 html,
 body {
@@ -140,7 +147,7 @@ body {
 
 .main-header .nav-link:link,
 .main-header .nav-link:visited {
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 1.8rem;
   font-weight: 500;
   color: #333;
@@ -185,7 +192,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: all 0.5s ease;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
@@ -198,7 +205,7 @@ body {
 }
 
 .main-header .mobile-nav-list .mobile-nav-link {
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 2.4rem;
   font-weight: 500;
   color: #333;
@@ -731,7 +738,7 @@ body {
 
 .cta .cta-form .form-group input,
 .cta .cta-form .form-group select {
-  outline: none;
+  transition: all 0.3s ease;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 1rem;
@@ -747,9 +754,8 @@ body {
 
 .cta .cta-form button[type='submit'] {
   align-self: end;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
   border-radius: 1rem;
-  outline: none;
   border: none;
   padding: 1.2rem;
   background-color: #45260a;
@@ -772,6 +778,11 @@ body {
     url(../img/eating.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.cta *:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5) !important;
 }
 
 /* Website footer */
@@ -839,7 +850,7 @@ body {
 }
 
 .main-footer .footer-column a {
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   color: #767676;
 }
 
