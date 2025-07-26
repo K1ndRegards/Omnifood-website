@@ -315,7 +315,7 @@ body {
   row-gap: 9.6rem;
 }
 
-/* Controllin the order */
+/* Controlling the order */
 .overview .overview-grid .grid-item:nth-child(1) {
   order: 1;
 }
@@ -501,7 +501,7 @@ body {
   }
 }
 
-/* Testtimonials & Gallery section */
+/* Testimonials & Gallery section */
 .testimonials .testimonials-container {
   display: grid;
   grid-template-columns: 55fr 45fr;
